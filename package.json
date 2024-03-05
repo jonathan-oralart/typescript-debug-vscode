@@ -1,20 +1,24 @@
 {
-  "name": "typescript-debug-vscode",
+  "name": "Project_Name",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "dev": "netlify dev",
+    "start": "node --disable-warning ExperimentalWarning --loader ts-node/esm ./src/main.ts",
     "proxyman": "set -a && source \"/Users/oralart/.proxyman/proxyman_env_automatic_setup.sh\" && set +a && node --disable-warning ExperimentalWarning --loader ts-node/esm ./src/main.ts",
     "proxyman_debug": "set -a && source \"/Users/oralart/.proxyman/proxyman_env_automatic_setup.sh\" && set +a && node --inspect-brk --disable-warning ExperimentalWarning --loader ts-node/esm ./src/main.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@netlify/functions": "^2.6.0"
+  },
   "devDependencies": {
-    "@types/node": "^20.10.4",
     "@swc/core": "^1.4.0",
+    "@types/node": "^20.10.4",
     "ts-node": "^10.9.2"
   }
 }

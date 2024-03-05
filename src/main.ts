@@ -6,7 +6,14 @@ class Adder {
     }
 }
 
-const myAdder = new Adder();
+function main() {
+    const myAdder = new Adder();
 
-const result = myAdder.add(5, 7);
-console.log(result);
+    const result = myAdder.add(5, 7);
+    console.log(result);
+
+}
+
+if (process.execPath.startsWith("/Users/oralart")) {
+    let x = main()
+}
